@@ -25,7 +25,7 @@
     </inertial>
 
     <collision name='collision'>
-      <origin xyz="0 0 0" rpy=" 0 0 0"/> 
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
         <box size=".4 .2 .1"/>
       </geometry>
@@ -210,7 +210,26 @@
   <joint type="fixed" name="camera_joint">
     <origin xyz="0.2 0 0" rpy="0 0 0"/>
     <child link="camera"/>
-    <parent link="chassis"/>
+    <parent link="robot_footprint"/>
+  </joint>
+
+  <link name='camera_depth'>
+    <visual name='chassis_visual'>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.05 0.05 0.05"/>
+      </geometry>
+      <material name="Cyan">
+        <color rgba="0 1.0 1.0 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <!--joint type="continuous" name="left_wheel_hinge"-->
+  <joint type="fixed" name="camera_joint_correction">
+    <origin xyz="0 0 0" rpy="1.57 3.14 1.57"/>
+    <child link="camera_depth"/>
+    <parent link="camera"/>
   </joint>
 
   <!-- hokuyo -->
