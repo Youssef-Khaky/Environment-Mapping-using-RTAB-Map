@@ -38,17 +38,19 @@
         <param name="Reg/Force3DoF" type="string" value="true"/>
 
         <!-- Loop Closure Detection -->
-  <param name="Kp/DetectorStrategy" type="string" value="0"/>
+        <param name="Kp/DetectorStrategy" type="string" value="0"/>
 
-        <param name="Kp/MaxFeatures" type="string" value="400"/>
+        <param name="Kp/MaxFeatures" type="string" value="50"/>
 
-        <param name="SURF/HessianThreshold" type="string" value="100"/>
+        <param name="SURF/HessianThreshold" type="string" value="30"/>
 
         <param name="Reg/Strategy" type="string" value="0"/>
 
         <param name="Vis/MinInliers" type="string" value="15"/>
 
         <param name="Mem/NotLinkedNodesKept" type="string" value="false"/>
+
+        <!-- <param name="Icp/MaxTranslation" type="string" value="0.1"/> -->
 
     </node>
 
