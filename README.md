@@ -1,6 +1,5 @@
-# mapping
-Please open the project's report. "Project_Report.pdf"
-# Project Title
+# RTAB mapping exploration
+Please open the project's report. "Project_Report.pdf".   
 The purpose of this project is to explore the RTAB map ROS package and get familiar with it. There is a detailed report "Project_Report.pdf" explaining my findings and difficulties faced when using the package.
 
 ## Getting Started
